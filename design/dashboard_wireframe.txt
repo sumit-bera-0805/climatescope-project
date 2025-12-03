@@ -1,10 +1,111 @@
+-------------------------------------------------------------
+             ClimateScope Dashboard — [Selected Country]
+-------------------------------------------------------------
 
-Dashboard wireframe (text draft)
---------------------------------
-Top: Title | Date-range selector | Variable selector (temperature/precipitation/wind/humidity)
-Left (60%): Global choropleth (country averages)
-Right (40%):
-  - Top: Time series for selected country
-  - Middle: Seasonal heatmap (month vs year)
-  - Bottom: Table of recent extreme events (filter by metric, station/country)
-Footer: Small insight cards (hottest avg country, wettest avg country, most-anomalous month)
+[Sidebar: Filters]
+-------------------------------------------------------------
+|  Select Country:  [Dropdown]                               |
+|  Select Variable: [Dropdown: temperature/precipitation...] |
+|                                                           |
+|  Date Range: [Start Date] - [End Date]                    |
+-------------------------------------------------------------
+
+
+[Main Page]
+=================================================================
+
+TITLE:
+  ClimateScope Dashboard — <Country Name>
+
+
+-------------------------------------------------------------
+SECTION: Key Metrics (KPIs)
+-------------------------------------------------------------
+| Avg Temperature (°C) | Total Precipitation (mm) | Avg Wind Speed (m/s) | Avg Humidity (%) |
+|        28.32         |          1543.20          |         3.12         |        61.45      |
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+SECTION: Time Series Trend
+-------------------------------------------------------------
+Chart: Line Plot
+X-axis: Date
+Y-axis: <Selected Variable>
+Title: "<Variable> Trend in <Country>"
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+SECTION: Seasonal Heatmap
+-------------------------------------------------------------
+Chart: Heatmap (Years vs Months)
+X-axis: Month (1–12)
+Y-axis: Year
+Color: Avg <Variable>
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+SECTION: Country Comparison
+-------------------------------------------------------------
+Chart: Horizontal/Vertical Bar Chart
+X-axis: Country Names
+Y-axis: Average <Variable>
+Color scale: Variable-based
+Title: "Average <Variable> by Country"
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+SECTION: Extreme Weather Events Table
+-------------------------------------------------------------
+Table Columns:
+    - date
+    - country
+    - station_id
+    - temperature
+    - precipitation
+    - wind_speed
+    - humidity
+
+Highlight rule: Any Z-score ≥ 2 or ≤ -2
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+SECTION: Map Visualization
+-------------------------------------------------------------
+Chart: Scatter Mapbox
+Points: Weather Stations
+Lat/Lon: "lat", "lon"
+Color: <Variable>
+Size: <Variable>
+Hover-info:
+    - station_id
+    - temperature
+    - precipitation
+    - wind_speed
+    - humidity
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+SECTION: Correlation Matrix
+-------------------------------------------------------------
+Chart: Correlation Heatmap
+Variables:
+    - temperature
+    - precipitation
+    - wind_speed
+    - humidity
+Color scale: Viridis
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+FOOTER
+-------------------------------------------------------------
+"Interactive ClimateScope Dashboard |
+ Explore trends, extremes, seasonal patterns, and regional variations."
+-------------------------------------------------------------
