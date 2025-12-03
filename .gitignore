@@ -1,0 +1,43 @@
+# -----------------------
+# Python cache files
+# -----------------------
+__pycache__/
+*.py[cod]
+
+# -----------------------
+# Environment folders
+# -----------------------
+venv/
+.env/
+.venv/
+env/
+
+# -----------------------
+# VS Code settings & history
+# -----------------------
+.vscode/
+.history/
+
+# -----------------------
+# Do NOT ignore any data folder or files (because you want to track them)
+# -----------------------
+# data/
+# *.parquet
+# *.csv
+# *.json
+
+# -----------------------
+# Jupyter checkpoints
+# -----------------------
+.ipynb_checkpoints/
+
+# -----------------------
+# OS junk files
+# -----------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------
+# Logs
+# -----------------------
+*.log
