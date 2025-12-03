@@ -1,0 +1,10 @@
+
+Dashboard wireframe (text draft)
+--------------------------------
+Top: Title | Date-range selector | Variable selector (temperature/precipitation/wind/humidity)
+Left (60%): Global choropleth (country averages)
+Right (40%):
+  - Top: Time series for selected country
+  - Middle: Seasonal heatmap (month vs year)
+  - Bottom: Table of recent extreme events (filter by metric, station/country)
+Footer: Small insight cards (hottest avg country, wettest avg country, most-anomalous month)
