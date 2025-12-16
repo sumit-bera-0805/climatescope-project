@@ -1,0 +1,22 @@
+# =========================
+# GENERAL APP SETTINGS
+# =========================
+
+[server]
+enableCORS = false
+enableXsrfProtection = false
+
+[theme]
+# Streamlit theme settings (you can keep this minimal since we override via CSS)
+base="light"
+primaryColor="#FF7043"         # Coral / Primary
+backgroundColor="#FFF3E0"      # Light peach / Background
+secondaryBackgroundColor="#FFB74D"  # Soft amber / Secondary panels
+textColor="#4E342E"            # Dark brown text
+font="sans serif"
+
+[browser]
+gatherUsageStats = false
+
+[global]
+unitSystem = "metric"          # Use metric units (Celsius, m/s, mm)
