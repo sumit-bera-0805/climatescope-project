@@ -470,7 +470,7 @@ elif page == "Distribution & Statistical Views":
     # --------------------------------
     # 1️⃣ HISTOGRAM
     # --------------------------------
-    st.subheader("📊 Histogram")
+    #st.subheader("📊 Histogram")
     fig_hist = px.histogram(
         dist_df,
         x=variable,
@@ -485,7 +485,7 @@ elif page == "Distribution & Statistical Views":
     # --------------------------------
     # 2️⃣ DENSITY PLOT (Smoothed Histogram)
     # --------------------------------
-    st.subheader("📈 Density Plot")
+    #st.subheader("📈 Density Plot")
     fig_density = px.histogram(
         dist_df,
         x=variable,
@@ -502,7 +502,7 @@ elif page == "Distribution & Statistical Views":
     # --------------------------------
     # 3️⃣ CDF (Cumulative Distribution Function)
     # --------------------------------
-    st.subheader("📐 Cumulative Distribution Function (CDF)")
+    #st.subheader("📐 Cumulative Distribution Function (CDF)")
     fig_cdf = px.ecdf(
         dist_df,
         x=variable,
@@ -515,7 +515,7 @@ elif page == "Distribution & Statistical Views":
     # --------------------------------
     # 4️⃣ PERCENTILE BANDS (25–75 & 10–90)
     # --------------------------------
-    st.subheader("📉 Percentile Bands")
+    #st.subheader("📉 Percentile Bands")
 
     percentile_df = dist_df.groupby("date")[variable].agg(
         p10=lambda x: x.quantile(0.10),
@@ -577,7 +577,7 @@ elif page == "Distribution & Statistical Views":
     # --------------------------------
     # 5️⃣ RANGE BANDS (MIN–MAX SHADING)
     # --------------------------------
-    st.subheader("📦 Range Bands (Min–Max)")
+    #st.subheader("📦 Range Bands (Min–Max)")
 
     range_df = dist_df.groupby("date")[variable].agg(
         min_val="min",
