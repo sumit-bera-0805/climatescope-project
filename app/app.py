@@ -222,7 +222,7 @@ elif page == "Extreme Events":
     # -------------------------------
     # Lollipop Chart: Extreme Days Overview
     # -------------------------------
-    st.subheader("📍 Extreme Days Overview (Lollipop Chart)")
+    st.subheader("📍 Extreme Days Overview")
     # Define extreme threshold: e.g., 95th percentile
     extreme_threshold = filtered_daily[variable].quantile(0.95)
     extreme_days = filtered_daily[filtered_daily[variable] > extreme_threshold]
