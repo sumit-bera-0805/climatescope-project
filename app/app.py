@@ -615,6 +615,9 @@ elif page == "Distribution & Statistical Views":
     )
     st.plotly_chart(apply_black_theme(fig_range), use_container_width=True)
 
+
+
+
 # =====================================================
 # FOOTER
 # =====================================================
